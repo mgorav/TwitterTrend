@@ -86,7 +86,7 @@ Step 6. Sort by key (count) & take n elements
 
 #### Deployment Architecture
 
-   The following picture shows running to TwitterTrend using Cluster Manager:
+   The following picture shows running to TwitterTrend using Cluster Manager on Hadoop YARN,Standalone, Mesos etc:
 
 ![alt text](./images/DeploymentArch.png)
 
