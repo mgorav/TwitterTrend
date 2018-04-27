@@ -42,27 +42,27 @@
 
 #### Algorithm
 
-1. From twitter JSON file create paired RDD using TweetMessageParseFunction
+Step 1. From twitter JSON file create paired RDD using TweetMessageParseFunction
 
    ![alt text](./images/Step1.png)
    
-2. Reduce by TweetMessage vs count
+Step 2. Reduce by TweetMessage vs count
 
     ![alt text](./images/Step2.png)
 
-3. Transform to cached paired RDD of TweetWindow Vs Tuple of TweetMessage & count
+Step 3. Transform to cached paired RDD of TweetWindow Vs Tuple of TweetMessage & count
 
    ![alt text](./images/Step3.png)
    
-4. Filter TweetMessage by required TweetWindow
+Step 4. Filter TweetMessage by required TweetWindow
 
    ![alt text](./images/Step4.png)
    
-5. Transform to count vs TweetMessage.text
+Step 5. Transform to count vs TweetMessage.text
     
    ![alt text](./images/Step5.png)
    
-6. Sort by key (count) & take n elements
+Step 6. Sort by key (count) & take n elements
 
    ![alt text](./images/Step6.png)
    
