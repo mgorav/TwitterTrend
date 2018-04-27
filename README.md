@@ -1,5 +1,7 @@
 # Twitter Trend
 
+ For the past few months, I have been really excited about my learning in the area of Machine Learning & Big data. This is my first application
+ in my quest to learn this field.
 
  The Twitter Trending is updated in real-time or near real-time. This application aims at determining trending topics in
  batch based on a available dataset, which was captured over a period of time. This application will produce a top N of 
