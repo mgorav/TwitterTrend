@@ -4,6 +4,8 @@
  The Twitter Trending is updated in real-time or near real-time. This application aims at determining trending topics in
  batch based on a available dataset, which was captured over a period of time. This application will produce a top N of 
  trending topics per day/minute/hour/month/year.
+ 
+ This is a good example which will aide in learning machine learning/big data analysis.
 
 
 #### Instructions to run:
