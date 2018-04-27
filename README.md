@@ -34,6 +34,7 @@
     4. Lombok 1.16.18
     5. Junit 4.12
     
+    
 #### Domain Model
 
 ![alt text](./images/DomainModel.png)
@@ -65,11 +66,12 @@
 
    ![alt text](./images/Step6.png)
    
-7. 
+
+#### Deployment Architecture
+
+   The following picture shows running to TwitterTrend using Cluster Manager
+
+![alt text](./images/DeploymentArch.png)
+
+
    
-
-
-
-
-
-
