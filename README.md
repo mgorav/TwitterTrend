@@ -69,7 +69,7 @@
 
 #### Deployment Architecture
 
-   The following picture shows running to TwitterTrend using Cluster Manager
+   The following picture shows running to TwitterTrend using Cluster Manager:
 
 ![alt text](./images/DeploymentArch.png)
 
