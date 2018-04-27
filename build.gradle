@@ -1,0 +1,48 @@
+group 'com.gdd.twitter'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+idea {
+    project {
+        jdkName = '1.8'
+        languageLevel = '1.8'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+
+dependencies {
+
+    compile group: 'org.apache.spark', name: 'spark-core_2.11', version: '2.3.0'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+    testCompile group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+    testCompile 'junit:junit:4.12'
+}
+
+
+jar {
+    zip64
+    
+    archiveName = "TwitterTrend.jar"
+    from {
+        configurations.compile.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+
+    manifest {
+        attributes 'Main-Class': 'com.gdd.twitter.trend.batch.driver.TwitterTrend'
+    }
+
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF', 'META-INF/*.DSA'
+
+}
