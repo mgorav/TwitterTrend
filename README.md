@@ -67,7 +67,8 @@ Step 1. From twitter JSON file create paired RDD using TweetMessageParseFunction
    
 Step 2. Reduce by TweetMessage vs count
 
-    ![alt text](./images/Step2.png)
+   ![alt text](./images/Step2.png)
+   
 
 Step 3. Transform to cached paired RDD of TweetWindow Vs Tuple of TweetMessage & count
 
